@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             final File folder = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
             File file = new File(folder, "AndroidVer.txt");
             FileOutputStream fos = new FileOutputStream(file);
-            String choice = "Version Name: " + androidList.get(position).getAndroidNames() + "\n " + androidList.get(position).getReleaseDates();
+            String choice = "Version Name: " + androidList.get(position).getAndroidNames() + "\n" + androidList.get(position).getReleaseDates();
             fos.write(choice.getBytes());
             fos.close();
             myDialog.setTitle(androidList.get(position).getAndroidNames());
