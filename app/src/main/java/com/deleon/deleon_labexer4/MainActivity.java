@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     showToast();
                 }
             });
+
             myDialog.create().show();
         } catch (Exception e) {
             e.printStackTrace();
